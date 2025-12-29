@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun } from 'lucide-react';
+import { Menu, X, Sun, Instagram, Facebook, Youtube, Twitter } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Navbar = () => {
@@ -19,13 +19,16 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-background border-b border-border/40 sticky top-0 z-50 backdrop-blur-md bg-background/80">
+    <nav className="bg-[#2b0a0a]/90 border-b border-sunflower-gold/20 sticky top-0 z-50 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center gap-2">
-              <Sun className="h-8 w-8 text-tomato" />
-              <span className="font-bold text-xl tracking-tight text-foreground">
+            <Link to="/" className="flex-shrink-0 flex items-center gap-3 group">
+              <div className="relative">
+                 <div className="absolute inset-0 bg-sunflower-gold blur-md opacity-40 group-hover:opacity-60 transition-opacity" />
+                 <Sun className="h-8 w-8 text-sunflower-gold relative z-10" />
+              </div>
+              <span className="font-serif font-bold text-xl tracking-wide text-white">
                 Divine Temple
               </span>
             </Link>
@@ -37,18 +40,32 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                className={`px-3 py-2 text-sm font-medium transition-all duration-200 relative group ${
                   isActive(link.path)
-                    ? 'text-tomato font-bold'
-                    : 'text-muted-foreground hover:text-tomato'
+                    ? 'text-sunflower-gold'
+                    : 'text-white/80 hover:text-sunflower-gold'
                 }`}
               >
                 {link.name}
+                {isActive(link.path) && (
+                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-sunflower-gold shadow-[0_0_10px_#ffc669]" />
+                )}
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-sunflower-gold transition-all duration-300 group-hover:w-full opacity-50" />
               </Link>
             ))}
+            
+            <div className="h-6 w-[1px] bg-white/10 mx-2" />
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-4">
+               <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Instagram className="w-5 h-5" /></a>
+               <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Facebook className="w-5 h-5" /></a>
+               <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Youtube className="w-5 h-5" /></a>
+            </div>
+
             <Link to="/donate">
-              <Button className="bg-gradient-to-r from-tomato to-tomato-2 hover:from-tomato-2 hover:to-tomato text-white shadow-md">
-                Donate Now
+              <Button className="bg-gradient-to-r from-tomato to-coral-glow hover:from-coral-glow hover:to-tomato text-white shadow-[0_0_15px_rgba(255,101,66,0.4)] rounded-full px-6 border border-white/10">
+                Donate
               </Button>
             </Link>
           </div>
@@ -57,7 +74,7 @@ const Navbar = () => {
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hover:text-foreground focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white/80 hover:text-white focus:outline-none"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -67,7 +84,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-background border-b border-border/50">
+        <div className="md:hidden bg-[#2b0a0a] border-b border-sunflower-gold/20">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link
@@ -76,16 +93,23 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                   isActive(link.path)
-                    ? 'text-tomato bg-secondary/10'
-                    : 'text-muted-foreground hover:text-tomato hover:bg-secondary/5'
+                    ? 'text-sunflower-gold bg-white/5'
+                    : 'text-white/70 hover:text-sunflower-gold hover:bg-white/5'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <div className="pt-4 pb-2">
+            
+            <div className="flex items-center gap-6 px-4 py-4 justify-center border-t border-white/10 mt-2">
+               <a href="#" className="text-white/70 hover:text-sunflower-gold"><Instagram className="w-6 h-6" /></a>
+               <a href="#" className="text-white/70 hover:text-sunflower-gold"><Facebook className="w-6 h-6" /></a>
+               <a href="#" className="text-white/70 hover:text-sunflower-gold"><Youtube className="w-6 h-6" /></a>
+            </div>
+
+            <div className="pt-2 pb-2 px-3">
                <Link to="/donate" onClick={() => setIsOpen(false)} className="w-full block">
-                <Button className="w-full bg-gradient-to-r from-tomato to-tomato-2 text-white">
+                <Button className="w-full bg-gradient-to-r from-tomato to-tomato-2 text-white rounded-full">
                   Donate Now
                 </Button>
               </Link>
