@@ -5,7 +5,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Calendar, ArrowRight, HeartHandshake, Sparkles, Sun } from 'lucide-react';
 import { EVENTS } from '../mockData';
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '../components/ui/AnimatedSection';
 import MandalaBackground from '../components/MandalaBackground';
 import ImmersiveLayer from '../components/ImmersiveLayer';
@@ -23,7 +23,7 @@ const Home = () => {
   const haloRotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
 
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden bg-[#0c0502]"> {/* Darker, richer background */}
+    <div className="flex flex-col min-h-screen overflow-x-hidden bg-[#2b0a0a]"> {/* Deep Maroon Background */}
       <ImmersiveLayer />
       
       {/* Dynamic Parallax Hero Section */}
@@ -36,11 +36,11 @@ const Home = () => {
           <img 
             src="https://images.pexels.com/photos/2186581/pexels-photo-2186581.jpeg" 
             alt="Temple Sunset" 
-            className="w-full h-full object-cover brightness-[0.6] contrast-125 saturate-150"
+            className="w-full h-full object-cover brightness-[0.7] contrast-125 saturate-150"
           />
           {/* Vignette & Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-[#0c0502]" />
-          <div className="absolute inset-0 bg-radial-gradient from-transparent to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-[#2b0a0a]" />
+          <div className="absolute inset-0 bg-radial-gradient from-transparent to-black/60" />
         </motion.div>
 
         {/* Floating Lights/Diyas */}
@@ -48,7 +48,7 @@ const Home = () => {
             {[...Array(6)].map((_, i) => (
                 <motion.div
                     key={i}
-                    className="absolute bottom-10 w-24 h-24 bg-tomato/20 rounded-full blur-[40px]"
+                    className="absolute bottom-10 w-24 h-24 bg-tomato/30 rounded-full blur-[40px]"
                     style={{ left: `${15 + i * 15}%` }}
                     animate={{ 
                         y: [0, -20, 0],
@@ -107,17 +107,17 @@ const Home = () => {
       </section>
 
       {/* Horizontal Scroll / Parikrama Experience Mockup */}
-      <section className="py-0 relative z-10 bg-[#0c0502]">
-        <div className="h-32 bg-gradient-to-b from-[#0c0502] to-[#1a0f0a]" />
+      <section className="py-0 relative z-10 bg-[#2b0a0a]">
+        <div className="h-32 bg-gradient-to-b from-[#2b0a0a] to-[#3a1010]" />
         
         {/* Virtual Darshan Section */}
-        <div className="bg-[#1a0f0a] py-24 relative overflow-hidden">
-           <MandalaBackground opacity={0.1} color="var(--sunflower-gold)" />
+        <div className="bg-[#3a1010] py-24 relative overflow-hidden">
+           <MandalaBackground opacity={0.15} color="var(--sunflower-gold)" />
            
            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
               <FadeIn className="text-center mb-16">
                  <h2 className="text-4xl md:text-5xl font-bold text-sunflower-gold font-serif mb-4">Virtual Darshan</h2>
-                 <p className="text-white/60 text-lg">Experience the divine presence</p>
+                 <p className="text-white/70 text-lg">Experience the divine presence</p>
               </FadeIn>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -178,7 +178,7 @@ const Home = () => {
       </section>
 
       {/* Events - Cards that look like Invitations */}
-      <section className="py-32 bg-[#0c0502] relative z-10">
+      <section className="py-32 bg-[#2b0a0a] relative z-10">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn className="text-center mb-16">
                <span className="text-tomato font-bold tracking-widest uppercase text-sm">Community</span>
@@ -190,7 +190,7 @@ const Home = () => {
                   <StaggerItem key={event.id}>
                      <motion.div 
                         whileHover={{ y: -10 }}
-                        className="bg-[#1a0f0a] border border-white/10 p-6 rounded-t-[100px] rounded-b-[20px] shadow-2xl group overflow-hidden relative"
+                        className="bg-[#3a1010] border border-white/10 p-6 rounded-t-[100px] rounded-b-[20px] shadow-2xl group overflow-hidden relative"
                      >
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-sunflower-gold to-transparent opacity-50" />
                         
@@ -217,13 +217,13 @@ const Home = () => {
       </section>
 
       {/* Hundi / Donation Teaser */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden bg-[#2b0a0a]">
          <div className="absolute inset-0 bg-gradient-to-r from-tomato via-coral-glow to-honey-bronze opacity-10" />
          <MandalaBackground opacity={0.2} />
          
          <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
             <ScaleIn>
-               <div className="inline-block p-8 rounded-full border-4 border-sunflower-gold/30 bg-black/50 backdrop-blur-xl mb-8 shadow-[0_0_50px_rgba(255,198,105,0.2)]">
+               <div className="inline-block p-8 rounded-full border-4 border-sunflower-gold/30 bg-black/30 backdrop-blur-xl mb-8 shadow-[0_0_50px_rgba(255,198,105,0.2)]">
                   <HeartHandshake className="h-16 w-16 text-sunflower-gold" />
                </div>
             </ScaleIn>

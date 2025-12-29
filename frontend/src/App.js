@@ -28,9 +28,9 @@ function App() {
     <>
       {showEntrance && <TempleEntrance onEnter={() => setShowEntrance(false)} />}
       
-      <div className={`${showEntrance ? 'h-screen overflow-hidden filter blur-sm' : ''} transition-all duration-1000`}>
+      <div className={`bg-[#2b0a0a] min-h-screen ${showEntrance ? 'h-screen overflow-hidden filter blur-sm' : ''} transition-all duration-1000`}>
         <BrowserRouter>
-          <div className="flex flex-col min-h-screen bg-[#0c0502] text-foreground font-sans antialiased">
+          <div className="flex flex-col min-h-screen text-foreground font-sans antialiased">
             <ScrollToTop />
             <Navbar />
             <main className="flex-grow">

@@ -26,7 +26,7 @@ const Donate = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0c0502] text-white relative overflow-hidden flex flex-col items-center justify-center py-20">
+    <div className="min-h-screen bg-[#2b0a0a] text-white relative overflow-hidden flex flex-col items-center justify-center py-20">
       <ImmersiveLayer />
       <MandalaBackground opacity={0.1} color="var(--sunflower-gold)" />
 
@@ -45,7 +45,7 @@ const Donate = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* Donation Visualizer / Hundi Animation */}
-            <div className="relative h-[400px] flex items-center justify-center bg-[#1a0f0a] rounded-3xl border border-white/5 shadow-2xl overflow-hidden group">
+            <div className="relative h-[400px] flex items-center justify-center bg-[#3a1010] rounded-3xl border border-white/5 shadow-2xl overflow-hidden group">
                 {/* The "Hundi" Slot */}
                 <div className="w-64 h-2 bg-black rounded-full shadow-[0_0_20px_rgba(255,101,66,0.5)] z-20 relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-tomato to-transparent opacity-50" />
@@ -76,7 +76,7 @@ const Donate = () => {
             </div>
 
             {/* Donation Controls */}
-            <Card className="bg-[#1a0f0a] border-white/10 backdrop-blur-xl shadow-2xl">
+            <Card className="bg-[#3a1010] border-white/10 backdrop-blur-xl shadow-2xl">
               <CardContent className="p-8 space-y-8">
                 <div>
                     <label className="text-sm font-medium text-white/60 mb-4 block">Select Offering Amount</label>
