@@ -22,25 +22,18 @@ const ImmersiveLayer = () => {
 
   // Background Symbols Animation
   const itemCount = 20;
-  const symbolTypes = ['om', 'swastik', 'sun', 'moon'];
+  const symbolTypes = ['om', 'lotus', 'sun', 'moon'];
 
   return (
     <div className="fixed inset-0 pointer-events-none z-[100] overflow-hidden">
-      {/* Custom Cursor - Now using Swastik as requested */}
+      {/* Custom Cursor - Simple dot design */}
       <motion.div
-        className="hidden md:flex absolute w-12 h-12 items-center justify-center text-sunflower-gold drop-shadow-[0_0_15px_rgba(255,198,105,0.9)] z-[101]"
+        className="hidden md:flex absolute w-4 h-4 rounded-full bg-sunflower-gold shadow-[0_0_10px_rgba(255,198,105,0.8)] z-[101]"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
         }}
-      >
-         {/* Swastik SVG for Cursor */}
-         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 rotate-45">
-            <path d="M12,0 L12,10 L2,10 L2,6 L8,6 L8,2 L12,2 L12,0 Z M12,14 L12,24 L14,24 L14,18 L22,18 L22,14 L12,14 Z M14,12 L24,12 L24,14 L18,14 L18,22 L14,22 L14,12 Z M0,12 L10,12 L10,14 L6,14 L6,22 L2,22 L2,12 L0,12 Z" transform="translate(0,0)"/>
-            {/* Simple Swastik Path Approximation or use text if easier, but SVG is safer for rotation */}
-            <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontSize="20" fontWeight="bold">卐</text>
-         </svg>
-      </motion.div>
+      />
       
       {/* Falling Symbols */}
       {Array.from({ length: itemCount }).map((_, i) => {
@@ -77,10 +70,11 @@ const ImmersiveLayer = () => {
               </div>
             )}
             
-            {type === 'swastik' && (
+            {type === 'lotus' && (
               <div className="text-tomato/40 drop-shadow-sm">
                  <svg width="24" height="24" viewBox="0 0 100 100" fill="currentColor">
-                    <text x="50" y="70" fontSize="80" textAnchor="middle" fontWeight="bold">卐</text>
+                    <path d="M50 10 C40 10, 30 20, 30 30 C30 40, 35 45, 40 50 C35 55, 30 60, 30 70 C30 80, 40 90, 50 90 C60 90, 70 80, 70 70 C70 60, 65 55, 60 50 C65 45, 70 40, 70 30 C70 20, 60 10, 50 10 Z"/>
+                    <circle cx="50" cy="50" r="8" fill="currentColor"/>
                  </svg>
               </div>
             )}
