@@ -15,6 +15,7 @@ const Navbar = () => {
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.events'), path: '/events' },
+    { name: t('nav.accommodation'), path: '/accommodation' },
     { name: t('nav.gallery'), path: '/gallery' },
     { name: t('nav.contact'), path: '/contact' },
   ];
