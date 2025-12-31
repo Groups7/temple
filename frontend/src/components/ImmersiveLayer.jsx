@@ -18,7 +18,7 @@ const ImmersiveLayer = () => {
     };
     window.addEventListener('mousemove', moveCursor);
     return () => window.removeEventListener('mousemove', moveCursor);
-  }, []);
+  }, [cursorX, cursorY]);
 
   // Background Symbols Animation
   const itemCount = 20;

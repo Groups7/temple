@@ -25,7 +25,7 @@ const TextSlider = () => {
       setIndex((prev) => (prev + 1) % words.length);
     }, 4000);
     return () => clearInterval(timer);
-  }, []);
+  }, [words.length]);
 
   return (
     <div className="h-48 relative overflow-hidden">
