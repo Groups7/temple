@@ -169,7 +169,6 @@ const Home = () => {
            transition={{ delay: 2, duration: 1 }}
            className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 flex flex-col items-center gap-2 z-20"
         >
-          <span className="text-xs uppercase tracking-widest text-sunflower-gold">Scroll Down</span>
           <motion.div 
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
