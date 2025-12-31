@@ -75,7 +75,7 @@ const Home = () => {
             poster="https://images.pexels.com/photos/2186581/pexels-photo-2186581.jpeg"
           >
             {/* Using a reliable ethereal/particle video source */}
-            <source src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+            <source src="https://www.shutterstock.com/shutterstock/videos/1105385411/preview/stock-footage-the-indian-hindu-temple-features-a-shikhara-or-tower-in-its-architectural-design-adorned-with.webm" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* Overlays for readability and theme */}
