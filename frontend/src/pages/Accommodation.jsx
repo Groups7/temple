@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Bed, Users, Wifi, Car, Utensils, Phone, Calendar, MapPin, CheckCircle, Star } from 'lucide-react';
@@ -6,6 +7,7 @@ import { FadeIn, StaggerContainer, StaggerItem, ScaleIn } from '../components/ui
 import MandalaBackground from '../components/MandalaBackground';
 
 const Accommodation = () => {
+  const { t } = useTranslation();
   const accommodationOptions = [
     {
       id: 1,
@@ -91,10 +93,10 @@ const Accommodation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
             <h1 className="text-5xl md:text-6xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">
-              Temple Accommodation
+              {t('accommodation.title')}
             </h1>
             <p className="text-white/70 max-w-3xl mx-auto text-xl font-light leading-relaxed">
-              Experience spiritual comfort with our guest facilities and event halls.
+              {t('accommodation.subtitle')}
             </p>
           </FadeIn>
         </div>

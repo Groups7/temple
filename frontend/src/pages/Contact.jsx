@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
@@ -10,6 +11,7 @@ import { FadeIn, ScaleIn } from '../components/ui/AnimatedSection';
 import MandalaBackground from '../components/MandalaBackground';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,8 +37,8 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <FadeIn>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">Contact Us</h1>
-            <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">We'd love to hear from you. Reach out with any questions or feedback.</p>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">{t('contact.pageTitle')}</h1>
+            <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">{t('contact.pageSubtitle')}</p>
           </FadeIn>
         </div>
 

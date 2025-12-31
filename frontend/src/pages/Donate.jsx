@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -10,6 +11,7 @@ import MandalaBackground from '../components/MandalaBackground';
 import ImmersiveLayer from '../components/ImmersiveLayer';
 
 const Donate = () => {
+  const { t } = useTranslation();
   const [selectedAmount, setSelectedAmount] = useState(51);
   const [customAmount, setCustomAmount] = useState('');
   const [isDonating, setIsDonating] = useState(false);
@@ -39,8 +41,8 @@ const Donate = () => {
           <div className="inline-block p-4 rounded-full bg-tomato/10 mb-4 ring-1 ring-tomato/30">
              <span className="text-4xl animate-pulse">🙏</span>
           </div>
-          <h1 className="text-5xl font-serif text-sunflower-gold mb-4">Digital Hundi</h1>
-          <p className="text-white/60 text-lg">Your support helps light the lamp of knowledge and devotion.</p>
+          <h1 className="text-5xl font-serif text-sunflower-gold mb-4">{t('donate.title')}</h1>
+          <p className="text-white/60 text-lg">{t('donate.subtitle')}</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">

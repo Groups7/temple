@@ -1,11 +1,13 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { GALLERY_IMAGES } from '../mockData';
 import { Dialog, DialogContent, DialogTrigger } from '../components/ui/dialog';
 import { FadeIn, StaggerContainer, StaggerItem } from '../components/ui/AnimatedSection';
 import MandalaBackground from '../components/MandalaBackground';
 
 const Gallery = () => {
+  const { t } = useTranslation();
   return (
     <div className="py-12 bg-[#2b0a0a] min-h-screen relative overflow-hidden">
       <MandalaBackground opacity={0.1} color="var(--sunflower-gold)" />
@@ -13,8 +15,8 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <FadeIn>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">Photo Gallery</h1>
-            <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">Glimpses of our temple, deities, and community celebrations.</p>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">{t('gallery.pageTitle')}</h1>
+            <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">{t('gallery.pageSubtitle')}</p>
           </FadeIn>
         </div>
 

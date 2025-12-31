@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Calendar, Clock, MapPin, Search, Filter, ArrowRight, Sun, Music, BookOpen, Users } from 'lucide-react';
@@ -9,6 +10,7 @@ import MandalaBackground from '../components/MandalaBackground';
 import { motion } from 'framer-motion';
 
 const Events = () => {
+  const { t } = useTranslation();
   const [filter, setFilter] = useState('All');
   const [currentDate, setCurrentDate] = useState(new Date()); // Current date
 
@@ -126,10 +128,10 @@ const Events = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
             <h1 className="text-5xl md:text-6xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">
-              Temple Events & Celebrations
+              {t('events.title')}
             </h1>
             <p className="text-white/70 max-w-3xl mx-auto text-xl font-light leading-relaxed">
-              Join our community in celebration, prayer, and service.
+              {t('events.subtitle')}
             </p>
           </FadeIn>
         </div>

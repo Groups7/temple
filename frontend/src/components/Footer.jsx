@@ -1,9 +1,11 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Sun, Mail, MapPin, Phone, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-[#1a0606] pt-16 pb-8 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,22 +14,21 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Sun className="h-6 w-6 text-tomato" />
-              <span className="font-bold text-lg text-white">Yellamma Thalli Devasthanam</span>
+              <span className="font-bold text-lg text-white">{t('footer.brand')}</span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              A sanctuary for spiritual growth, community connection, and inner peace.
-              Join us in our journey of devotion and service.
+              {t('footer.brandDescription')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Quick Links</h3>
+            <h3 className="font-semibold mb-4 text-white">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/about" className="text-white/70 hover:text-tomato transition-colors">About Us</Link></li>
-              <li><Link to="/events" className="text-white/70 hover:text-tomato transition-colors">Upcoming Events</Link></li>
-              <li><Link to="/gallery" className="text-white/70 hover:text-tomato transition-colors">Photo Gallery</Link></li>
-              <li><Link to="/donate" className="text-white/70 hover:text-tomato transition-colors">Make a Donation</Link></li>
+              <li><Link to="/about" className="text-white/70 hover:text-tomato transition-colors">{t('footer.aboutUs')}</Link></li>
+              <li><Link to="/events" className="text-white/70 hover:text-tomato transition-colors">{t('footer.upcomingEvents')}</Link></li>
+              <li><Link to="/gallery" className="text-white/70 hover:text-tomato transition-colors">{t('footer.photoGallery')}</Link></li>
+              <li><Link to="/donate" className="text-white/70 hover:text-tomato transition-colors">{t('footer.makeDonation')}</Link></li>
             </ul>
           </div>
 
@@ -73,7 +74,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-white/20 text-center text-sm text-white/60">
           <p className="flex items-center justify-center gap-1">
-            © 2025 Chepali Yellamma Thalli Devasthanam. Made with <Heart className="h-3 w-3 text-tomato fill-current" /> for the community.
+            {t('footer.copyright')} <Heart className="h-3 w-3 text-tomato fill-current" /> {t('footer.copyrightSuffix')}
           </p>
         </div>
       </div>
