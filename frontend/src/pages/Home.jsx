@@ -1,6 +1,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Calendar, ArrowRight, Bell, Sparkles, Sun, ChevronRight } from 'lucide-react';
@@ -50,6 +51,7 @@ const TextSlider = () => {
 };
 
 const Home = () => {
+  const { t } = useTranslation();
   const upcomingEvents = EVENTS.slice(0, 3);
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll();
@@ -102,19 +104,18 @@ const Home = () => {
                  <TextSlider />
                  
                  <p className="text-lg text-gray-300 max-w-lg mt-6 leading-relaxed font-light mx-auto lg:mx-0">
-                    A sanctuary where ancient traditions meet modern spirituality. 
-                    Join us in our journey of devotion, service, and inner awakening.
+                    {t('hero.subtitle')}
                  </p>
                  
                  <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
                     <Link to="/events">
                        <Button size="lg" className="h-14 px-8 rounded-full bg-gradient-to-r from-tomato to-coral-glow hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,101,66,0.4)] text-lg font-bold">
-                          Explore Events
+                          {t('hero.exploreEvents')}
                        </Button>
                     </Link>
                     <Link to="/donate">
                        <Button variant="outline" size="lg" className="h-14 px-8 rounded-full border-sunflower-gold text-sunflower-gold hover:bg-sunflower-gold hover:text-black transition-all text-lg">
-                          Make Offering
+                          {t('hero.makeOffering')}
                        </Button>
                     </Link>
                  </div>

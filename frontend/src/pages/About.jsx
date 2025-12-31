@@ -1,10 +1,13 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '../components/ui/card';
 import { FadeIn, StaggerContainer, StaggerItem, ScaleIn } from '../components/ui/AnimatedSection';
 import MandalaBackground from '../components/MandalaBackground';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-[#2b0a0a] relative overflow-hidden">
       <MandalaBackground opacity={0.1} color="var(--sunflower-gold)" />
@@ -14,10 +17,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
             <h1 className="text-5xl md:text-6xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">
-              About Chepali Yellamma Thalli Devasthanam
+              {t('about.title')}
             </h1>
             <p className="text-white/70 max-w-3xl mx-auto text-xl font-light leading-relaxed">
-              Dedicated to preserving tradition, fostering spirituality, and serving the community since 1995.
+              {t('about.description')}
             </p>
           </FadeIn>
         </div>
@@ -29,17 +32,13 @@ const About = () => {
         {/* Our Story */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <FadeIn className="order-2 md:order-1 space-y-8">
-            <h2 className="text-4xl font-bold text-white">Our History & Mission</h2>
+            <h2 className="text-4xl font-bold text-white">{t('about.history')}</h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-tomato to-sunflower-gold rounded-full"></div>
             <p className="text-white/70 leading-loose text-lg">
-              Founded over two decades ago by a group of dedicated families, Yellamma Thalli Devasthanam started as a small
-              gathering in a community hall. Through unwavering faith and the generous support of our devotees,
-              we have grown into a vibrant spiritual center.
+              {t('about.historyText')}
             </p>
             <p className="text-white/70 leading-loose text-lg">
-              Our mission is to provide a sanctuary for worship, to educate our youth about our rich cultural
-              heritage, and to serve the broader community through charitable activities. We believe in the
-              universal values of peace, love, and compassion.
+              {t('about.missionText')}
             </p>
           </FadeIn>
           
