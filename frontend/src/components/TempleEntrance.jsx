@@ -78,7 +78,7 @@ const TempleEntrance = ({ onEnter }) => {
                 whileHover={{ scale: 1.05 }}
                 className="px-8 py-3 bg-transparent border border-sunflower-gold/50 text-sunflower-gold font-serif text-xl tracking-widest uppercase rounded-full hover:bg-sunflower-gold/10 transition-colors"
              >
-                Click to Enter Temple
+                Chepali yellamma thalli devasthanam
              </motion.button>
           </motion.div>
         </motion.div>

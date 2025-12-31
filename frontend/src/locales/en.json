@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "events": "Events",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "donate": "Donate"
+  },
+  "hero": {
+    "welcome": "Welcome to Yellamma Thalli Devasthanam",
+    "subtitle": "A sanctuary where ancient traditions meet modern spirituality. Join us in our journey of devotion, service, and inner awakening.",
+    "exploreEvents": "Explore Events",
+    "makeOffering": "Make Offering",
+    "strength": "STRENGTH",
+    "strengthSub": "Inner Power & Resilience",
+    "devotion": "DEVOTION",
+    "devotionSub": "A Path to Divine Love",
+    "protection": "PROTECTION",
+    "protectionSub": "The Shield of Faith",
+    "peace": "PEACE",
+    "peaceSub": "Serenity for the Soul",
+    "scrollDown": "Scroll Down"
+  },
+  "about": {
+    "title": "About Yellamma Thalli Devasthanam",
+    "subtitle": "Our Sacred Journey",
+    "description": "Yellamma Thalli Devasthanam stands as a beacon of spiritual enlightenment, preserving ancient Hindu traditions while embracing modern seekers. Our temple serves as a sanctuary for devotion, learning, and community service.",
+    "history": "Our History",
+    "historyText": "Founded with a vision to preserve and propagate the teachings of Goddess Yellamma, our temple has served the community for generations. We continue the sacred traditions passed down through centuries while adapting to contemporary spiritual needs.",
+    "mission": "Our Mission",
+    "missionText": "To provide a sacred space where devotees can connect with the divine, learn ancient wisdom, and serve the community. We strive to maintain the purity of Hindu traditions while making spiritual growth accessible to all.",
+    "community": "Community & Service",
+    "communityText": "Our temple actively engages in community service, educational programs, and charitable activities. We believe in the principle of 'Service to humanity is service to God'.",
+    "deities": "Our Deities",
+    "yellamma": "Goddess Yellamma",
+    "yellammaDesc": "The presiding deity, embodying protection, strength, and maternal love.",
+    "traditions": "Temple Traditions",
+    "traditionsDesc": "Daily rituals, festivals, and ceremonies following ancient Hindu practices."
+  },
+  "events": {
+    "title": "Temple Events & Celebrations",
+    "subtitle": "Join us in sacred gatherings and spiritual celebrations",
+    "featured": "Featured Events",
+    "upcoming": "Upcoming Events",
+    "filter": {
+      "all": "All",
+      "festivals": "Festivals",
+      "rituals": "Daily Rituals",
+      "classes": "Classes",
+      "service": "Service"
+    },
+    "time": "Time",
+    "location": "Main Hall",
+    "register": "Register Now",
+    "details": "Details",
+    "noEvents": "No events found",
+    "tryFilter": "Try selecting a different category"
+  },
+  "gallery": {
+    "title": "Temple Gallery",
+    "subtitle": "Capturing moments of devotion and celebration",
+    "viewAll": "View All Images"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our temple community",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Temple Hours",
+    "weekdays": "Weekdays: 6:00 AM - 8:00 PM",
+    "weekends": "Weekends: 5:00 AM - 9:00 PM",
+    "festivals": "Festival Days: 24/7",
+    "sendMessage": "Send us a Message",
+    "name": "Your Name",
+    "message": "Your Message",
+    "submit": "Send Message",
+    "location": "Main Entrance, Yellamma Thalli Devasthanam"
+  },
+  "donate": {
+    "title": "Digital Hundi",
+    "subtitle": "Your support helps light the lamp of knowledge and devotion.",
+    "offering": "Complete Offering",
+    "amount": "Select Offering Amount",
+    "custom": "Custom Amount",
+    "placeholder": "Enter amount",
+    "processing": "Processing Offering...",
+    "success": "Blessings! Thank you for your offering of",
+    "secure": "Secure Offering Processing"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "Yellamma Thalli Devasthanam is dedicated to preserving Hindu traditions and serving our community through spiritual guidance and charitable activities.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Info",
+    "followUs": "Follow Us",
+    "copyright": "© 2025 Yellamma Thalli Devasthanam. Made with love for the community.",
+    "location": "Main Entrance, Yellamma Thalli Devasthanam"
+  },
+  "language": {
+    "english": "English",
+    "telugu": "తెలుగు",
+    "selectLanguage": "Select Language"
+  }
+}

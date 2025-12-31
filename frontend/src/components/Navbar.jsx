@@ -1,20 +1,22 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Menu, X, Sun, Instagram, Facebook, Youtube, Twitter } from 'lucide-react';
 import { Button } from './ui/button';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Events', path: '/events' },
-    { name: 'Accommodation', path: '/accommodation' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Contact', path: '/contact' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.about'), path: '/about' },
+    { name: t('nav.events'), path: '/events' },
+    { name: t('nav.gallery'), path: '/gallery' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -64,9 +66,11 @@ const Navbar = () => {
                <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Youtube className="w-5 h-5" /></a>
             </div>
 
+            <LanguageSwitcher />
+
             <Link to="/donate">
               <Button className="bg-gradient-to-r from-tomato to-coral-glow hover:from-coral-glow hover:to-tomato text-white shadow-[0_0_15px_rgba(255,101,66,0.4)] rounded-full px-6 border border-white/10">
-                Donate
+                {t('nav.donate')}
               </Button>
             </Link>
           </div>
@@ -111,7 +115,7 @@ const Navbar = () => {
             <div className="pt-2 pb-2 px-3">
                <Link to="/donate" onClick={() => setIsOpen(false)} className="w-full block">
                 <Button className="w-full bg-gradient-to-r from-tomato to-tomato-2 text-white rounded-full">
-                  Donate Now
+                  {t('nav.donate')}
                 </Button>
               </Link>
             </div>
