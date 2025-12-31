@@ -37,7 +37,7 @@ const TextSlider = () => {
           transition={{ duration: 0.8, ease: "anticipate" }}
           className="absolute inset-0 flex flex-col justify-center"
         >
-          <h2 className="text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato font-serif tracking-tighter">
+          <h2 className="text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato font-serif tracking-tight">
             {words[index].text}
           </h2>
           <p className="text-2xl text-white/80 font-light mt-2 italic">
