@@ -226,5 +226,11 @@
     "english": "English",
     "telugu": "తెలుగు",
     "selectLanguage": "Select Language"
+  },
+  "brand": {
+    "name": "Yellamma Thalli",
+    "fullName": "Chepali Yellamma Thalli Devasthanam",
+    "welcome": "Welcome to Chepali Yellamma Thalli Devasthanam",
+    "location": "Main Entrance, Chepali Yellamma Thalli Devasthanam"
   }
 }

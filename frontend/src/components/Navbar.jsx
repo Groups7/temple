@@ -33,18 +33,18 @@ const Navbar = () => {
                  <Sun className="h-8 w-8 text-sunflower-gold relative z-10" />
               </div>
               <span className="font-serif font-bold text-lg tracking-wide text-white">
-                Yellamma Thalli
+                {t('brand.name')}
               </span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center md:space-x-6">
+          <div className="hidden md:flex md:items-center md:space-x-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
-                className={`px-3 py-2 text-sm font-medium transition-all duration-200 relative group ${
+                className={`px-2 py-2 text-sm font-medium transition-all duration-200 relative group ${
                   isActive(link.path)
                     ? 'text-sunflower-gold'
                     : 'text-white/80 hover:text-sunflower-gold'
@@ -61,13 +61,13 @@ const Navbar = () => {
             <div className="h-6 w-[1px] bg-white/10 mx-2" />
 
             {/* Social Icons */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
                <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Instagram className="w-5 h-5" /></a>
                <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Facebook className="w-5 h-5" /></a>
                <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Youtube className="w-5 h-5" /></a>
             </div>
 
-            <div className="ml-3">
+            <div className="ml-2">
               <LanguageSwitcher />
             </div>
 
