@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Calendar, ArrowRight, Bell, Sparkles, Sun, ChevronRight } from 'lucide-react';
+import { Calendar, ArrowRight, Heart, Sparkles, Sun, ChevronRight } from 'lucide-react';
 import { EVENTS } from '../mockData';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '../components/ui/AnimatedSection';
@@ -296,7 +296,7 @@ const Home = () => {
          <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
             <ScaleIn>
                <div className="inline-block p-8 rounded-full border-4 border-sunflower-gold/30 bg-black/30 backdrop-blur-xl mb-8 shadow-[0_0_50px_rgba(255,198,105,0.2)]">
-                  <Bell className="h-16 w-16 text-sunflower-gold" />
+                  <Heart className="w-12 h-12 text-tomato animate-pulse" />
                </div>
             </ScaleIn>
             <FadeIn>
