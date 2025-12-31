@@ -3,6 +3,6 @@
     "framer-motion": "^12.23.26"
   },
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   }
 }
