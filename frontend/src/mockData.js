@@ -7,7 +7,7 @@ export const EVENTS = [
     date: "Daily",
     time: "6:00 AM",
     image: "https://images.pexels.com/photos/35415449/pexels-photo-35415449.jpeg",
-    category: "Daily Ritual"
+    category: "Daily Rituals"
   },
   {
     id: 2,
@@ -16,25 +16,70 @@ export const EVENTS = [
     date: "Daily",
     time: "7:00 PM",
     image: "https://images.pexels.com/photos/35415438/pexels-photo-35415438.jpeg",
-    category: "Daily Ritual"
+    category: "Daily Rituals"
   },
   {
     id: 3,
     title: "Diwali Celebration",
     description: "The festival of lights. Grand celebration with lights, rangoli, and sweets.",
-    date: "Nov 12, 2025",
+    date: "Nov 12, 2024",
     time: "5:00 PM Onwards",
     image: "https://images.pexels.com/photos/35406980/pexels-photo-35406980.jpeg",
-    category: "Festival"
+    category: "Festivals"
   },
   {
     id: 4,
-    title: "Meditation Sunday",
-    description: "Guided meditation sessions for inner peace and mindfulness.",
+    title: "Gita Study Class",
+    description: "Weekly study of Bhagavad Gita with expert guidance and discussion.",
+    date: "Every Tuesday",
+    time: "7:00 PM",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    category: "Classes"
+  },
+  {
+    id: 5,
+    title: "Youth Bhajan Group",
+    description: "Learn traditional devotional songs and participate in community service.",
+    date: "Every Saturday",
+    time: "4:00 PM",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b",
+    category: "Classes"
+  },
+  {
+    id: 6,
+    title: "Community Kitchen Service",
+    description: "Help prepare and serve meals for the underprivileged in our community.",
     date: "Every Sunday",
+    time: "11:00 AM",
+    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a",
+    category: "Service"
+  },
+  {
+    id: 7,
+    title: "Temple Maintenance Day",
+    description: "Volunteer to help maintain and beautify our sacred temple premises.",
+    date: "First Sunday of month",
+    time: "9:00 AM",
+    image: "https://images.unsplash.com/photo-1582515073490-39981397c445",
+    category: "Service"
+  },
+  {
+    id: 8,
+    title: "Holi Festival",
+    description: "Celebrate the festival of colors with traditional rituals and community festivities.",
+    date: "March 14, 2025",
+    time: "6:00 PM",
+    image: "https://images.unsplash.com/photo-1586015555751-63bb77f4322a",
+    category: "Festivals"
+  },
+  {
+    id: 9,
+    title: "Ganesh Chaturthi",
+    description: "Grand celebration honoring Lord Ganesha with special pujas and processions.",
+    date: "September 7, 2025",
     time: "8:00 AM",
-    image: "https://images.unsplash.com/photo-1717677977177-c9577c04cf27",
-    category: "Wellness"
+    image: "https://images.pexels.com/photos/35406980/pexels-photo-35406980.jpeg",
+    category: "Festivals"
   }
 ];
 

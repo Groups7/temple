@@ -7,14 +7,14 @@ import MandalaBackground from '../components/MandalaBackground';
 
 const Gallery = () => {
   return (
-    <div className="py-12 bg-background min-h-screen relative overflow-hidden">
-      <MandalaBackground opacity={0.04} />
+    <div className="py-12 bg-[#2b0a0a] min-h-screen relative overflow-hidden">
+      <MandalaBackground opacity={0.1} color="var(--sunflower-gold)" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <FadeIn>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Photo Gallery</h1>
-            <p className="text-muted-foreground text-lg">Glimpses of our temple, deities, and community celebrations.</p>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">Photo Gallery</h1>
+            <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">Glimpses of our temple, deities, and community celebrations.</p>
           </FadeIn>
         </div>
 
@@ -23,7 +23,7 @@ const Gallery = () => {
             <StaggerItem key={index}>
               <Dialog>
                 <DialogTrigger asChild>
-                  <div className="relative group cursor-pointer overflow-hidden rounded-2xl h-80 shadow-md hover:shadow-2xl transition-all duration-500 border border-border/50">
+                  <div className="relative group cursor-pointer overflow-hidden rounded-2xl h-80 shadow-md hover:shadow-2xl transition-all duration-500 border border-white/20">
                     <img 
                       src={img.src} 
                       alt={img.alt} 

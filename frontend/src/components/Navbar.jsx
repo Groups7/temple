@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Events', path: '/events' },
+    { name: 'Accommodation', path: '/accommodation' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -29,7 +30,7 @@ const Navbar = () => {
                  <Sun className="h-8 w-8 text-sunflower-gold relative z-10" />
               </div>
               <span className="font-serif font-bold text-xl tracking-wide text-white">
-                Divine Temple
+                Yellamma Thalli
               </span>
             </Link>
           </div>
