@@ -85,7 +85,7 @@ const Home = () => {
 
         {/* Content Container - Split Layout */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full h-full flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-8 lg:gap-12 items-center w-full lg:translate-x-[-2rem] xl:translate-x-[-4rem]">
+          <div className="grid grid-cols-1 lg:grid-cols-[70%_30%] gap-8 lg:gap-12 items-center w-full lg:translate-x-[-2rem] xl:translate-x-[-4rem]">
             
             {/* Left Side: Text Slider */}
             <div className="space-y-8 order-1 lg:order-1 text-center lg:text-left">
