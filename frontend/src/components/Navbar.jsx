@@ -25,21 +25,21 @@ const Navbar = () => {
   return (
     <nav className="bg-[#2b0a0a]/90 border-b border-sunflower-gold/20 sticky top-0 z-50 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
-          <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center gap-3 group">
+        <div className="flex justify-between items-center h-20">
+          <div className="flex items-center flex-shrink-0">
+            <Link to="/" className="flex-shrink-0 flex items-center gap-2 group">
               <div className="relative">
                  <div className="absolute inset-0 bg-sunflower-gold blur-md opacity-40 group-hover:opacity-60 transition-opacity" />
                  <Sun className="h-8 w-8 text-sunflower-gold relative z-10" />
               </div>
-              <span className="font-serif font-bold text-xl tracking-wide text-white">
+              <span className="font-serif font-bold text-lg tracking-wide text-white">
                 Yellamma Thalli
               </span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden md:flex md:items-center md:space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -61,13 +61,15 @@ const Navbar = () => {
             <div className="h-6 w-[1px] bg-white/10 mx-2" />
 
             {/* Social Icons */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
                <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Instagram className="w-5 h-5" /></a>
                <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Facebook className="w-5 h-5" /></a>
                <a href="#" className="text-white/70 hover:text-sunflower-gold transition-colors"><Youtube className="w-5 h-5" /></a>
             </div>
 
-            <LanguageSwitcher />
+            <div className="ml-3">
+              <LanguageSwitcher />
+            </div>
 
             <Link to="/donate">
               <Button className="bg-gradient-to-r from-tomato to-coral-glow hover:from-coral-glow hover:to-tomato text-white shadow-[0_0_15px_rgba(255,101,66,0.4)] rounded-full px-6 border border-white/10">
