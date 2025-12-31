@@ -71,7 +71,7 @@ const Home = () => {
             loop 
             muted 
             playsInline
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover opacity-40"
             poster="https://images.pexels.com/photos/2186581/pexels-photo-2186581.jpeg"
           >
             {/* Using a reliable ethereal/particle video source */}
@@ -79,8 +79,8 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
           {/* Overlays for readability and theme */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#2b0a0a] via-[#2b0a0a]/80 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2b0a0a] via-transparent to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#2b0a0a]/60 via-[#2b0a0a]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#2b0a0a]/70 via-transparent to-black/30" />
         </div>
 
         {/* Content Container - Split Layout */}
