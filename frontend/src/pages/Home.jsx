@@ -63,7 +63,7 @@ const Home = () => {
       <ImmersiveLayer />
       
       {/* Video Background Hero Section */}
-      <section ref={heroRef} className="relative h-[100vh] flex items-center overflow-hidden">
+      <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
           <video 
