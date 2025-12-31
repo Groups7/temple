@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
-import { Heart, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import { toast } from 'sonner';
 import { motion, AnimatePresence } from 'framer-motion';
 import MandalaBackground from '../components/MandalaBackground';
@@ -37,7 +37,7 @@ const Donate = () => {
            className="text-center mb-12"
         >
           <div className="inline-block p-4 rounded-full bg-tomato/10 mb-4 ring-1 ring-tomato/30">
-             <Heart className="w-12 h-12 text-tomato animate-pulse" />
+             <span className="text-4xl animate-pulse">🙏</span>
           </div>
           <h1 className="text-5xl font-serif text-sunflower-gold mb-4">Digital Hundi</h1>
           <p className="text-white/60 text-lg">Your support helps light the lamp of knowledge and devotion.</p>
