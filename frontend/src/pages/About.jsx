@@ -14,7 +14,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
             <h1 className="text-5xl md:text-6xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunflower-gold to-tomato mb-6">
-              About Yellamma Thalli Devasthanam
+              About Chepali Yellamma Thalli Devasthanam
             </h1>
             <p className="text-white/70 max-w-3xl mx-auto text-xl font-light leading-relaxed">
               Dedicated to preserving tradition, fostering spirituality, and serving the community since 1995.

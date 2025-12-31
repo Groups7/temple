@@ -73,7 +73,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-white/20 text-center text-sm text-white/60">
           <p className="flex items-center justify-center gap-1">
-            © 2025 Yellamma Thalli Devasthanam. Made with <Heart className="h-3 w-3 text-tomato fill-current" /> for the community.
+            © 2025 Chepali Yellamma Thalli Devasthanam. Made with <Heart className="h-3 w-3 text-tomato fill-current" /> for the community.
           </p>
         </div>
       </div>

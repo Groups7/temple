@@ -96,7 +96,7 @@ const Home = () => {
               >
                  <div className="flex items-center gap-3 mb-6 justify-center lg:justify-start">
                     <div className="h-[2px] w-12 bg-sunflower-gold" />
-                    <span className="text-sunflower-gold uppercase tracking-[0.3em] text-sm font-semibold">Welcome to Yellamma Thalli Devasthanam</span>
+                    <span className="text-sunflower-gold uppercase tracking-[0.3em] text-sm font-semibold">Welcome to Chepali Yellamma Thalli Devasthanam</span>
                  </div>
                  
                  <TextSlider />

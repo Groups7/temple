@@ -283,7 +283,7 @@ const Accommodation = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">Location</h3>
               <p className="text-white/70 mb-2">Temple Accommodation Office</p>
-              <p className="text-white/70">Main Entrance, Yellamma Thalli Devasthanam</p>
+              <p className="text-white/70">Main Entrance, Chepali Yellamma Thalli Devasthanam</p>
             </div>
           </div>
 
@@ -294,7 +294,6 @@ const Accommodation = () => {
             </Button>
           </div>
         </div>
-
       </div>
     </div>
   );
